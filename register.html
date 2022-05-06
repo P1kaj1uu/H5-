@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人注册</title>
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- 引入注册页面样式文件 -->
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <div class="w">
+      <!-- 头部区域 -->
+      <header class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <span>欢迎注册</span>
+        </div>
+      </header>
+      <!-- 主体区域 -->
+      <section class="registerarea">
+        <h3>
+          <div class="no_login">注册新用户</div>
+          <div class="login">我有账号，去<a href="login.html">登录</a></div>
+        </h3>
+        <div class="reg_form">
+          <form method="post">
+            <ul>
+              <li>
+                <label for="tel" class="tel">手机号：</label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  autocomplete="off"
+                  required
+                />
+                <span class="succ sj_succ"><i></i>手机号码格式正确</span>
+                <span class="err sj_err"><i></i>手机号码格式错误</span>
+                <span class="err sj_null"><i></i>手机号码是必填项</span>
+              </li>
+              <li>
+                <label for="qq" class="qq">QQ号：</label>
+                <input
+                  type="text"
+                  name="qq"
+                  id="qq"
+                  autocomplete="off"
+                  required
+                />
+                <span class="succ qq_succ"><i></i>QQ号码格式正确</span>
+                <span class="err qq_err"><i></i>QQ号码格式错误</span>
+                <span class="err qq_null"><i></i>QQ号码是必填项</span>
+              </li>
+              <li>
+                <label for="username">昵称：</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  autocomplete="off"
+                />
+              </li>
+              <li>
+                <label for="yzm" class="yzm">短信验证码：</label>
+                <input
+                  type="text"
+                  name="yzm"
+                  id="yzm"
+                  autocomplete="off"
+                  required
+                />
+                <button class="getBtn">获取验证码</button>
+              </li>
+              <li>
+                <label for="psd" class="psd">登录密码：</label>
+                <input
+                  type="password"
+                  name="psd"
+                  id="psd"
+                  autocomplete="off"
+                  required
+                />
+                <em class="noShow show"></em>
+                <em class="okShow show"></em>
+                <span class="succ psd_succ"><i></i></span>
+                <span class="err psd_err"
+                  ><i></i>密码请以字母开头，长度在6~18之间</span
+                >
+                <span class="err psd_null"><i></i>登录密码是必填项</span>
+              </li>
+              <li class="safe">
+                安全程度 <em class="ruo">弱</em> <em class="zhong">中</em>
+                <em class="qiang">强</em>
+              </li>
+              <li>
+                <label for="repsd" class="repsd">确认密码：</label>
+                <input
+                  type="password"
+                  name="repsd"
+                  id="repsd"
+                  autocomplete="off"
+                  required
+                />
+                <span class="succ repsd_succ"><i></i></span>
+                <span class="err repsd_err"><i></i>两次输入密码不一致</span>
+                <span class="err repsd_null"><i></i>确认密码是必填项</span>
+              </li>
+              <li class="agree">
+                <input type="checkbox" name="ty" />
+                同意协议并注册
+                <a href="javascript:;">《知晓用户协议》</a>
+              </li>
+              <li>
+                <input type="submit" value="完成注册" disabled />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+      <!-- 底部区域 -->
+      <footer class="footer">
+        <div class="w">
+          <div class="mod_copyright">
+            <div class="links">
+              <a href="javascript:;">关于我们</a>
+              <a href="javascript:;">联系我们</a>
+              <a href="javascript:;">联系客服</a>
+              <a href="javascript:;">商家入驻</a>
+              <a href="javascript:;">营销中心</a>
+              <a href="javascript:;">手机品优购</a>
+              <a href="javascript:;">友情链接</a>
+              <a href="javascript:;">销售联盟</a>
+              <a href="javascript:;">品优购社区</a>
+              <a href="javascript:;">品优购公益</a>
+              <a href="javascript:;">English Site</a>
+              <a href="javascript:;">Contact U</a>
+            </div>
+            <div class="copyright">
+              地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096
+              电话：400-618-4000 传真：010-82935100 邮箱：zhanghj+itcast.cn
+              <br />
+              京ICP条08001421号京公网安备110108007702
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <!-- 引入JQuery文件 -->
+  <script src="js/jquery.js"></script>
+  <!-- 引入注册页的JS文件 -->
+  <script src="js/register.js"></script>
+  <!-- 引入倒计时的JS文件 -->
+  <script src="js/countdown.js"></script>
+</html>

@@ -1,0 +1,427 @@
+/* 版心 */
+.w {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.active {
+  color: #d2454c;
+}
+
+.header {
+  height: 84px;
+}
+.header .logo {
+  position: relative;
+  padding-top: 18px;
+}
+.header .logo b {
+  display: block;
+  width: 110px;
+  height: 40px;
+  position: absolute;
+  left: 200px;
+  bottom: 15px;
+  background: url(../images/welcome.png) no-repeat;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 475px;
+  background-color: #7f00ff;
+}
+.main .login_img {
+  height: 100%;
+  position: absolute;
+  left: 10%;
+}
+.main .login {
+  position: absolute;
+  left: 60%;
+  top: 8%;
+  width: 350px;
+  height: 420px;
+  background-color: #ffffff;
+}
+.main .login .tips-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: #fff8f0;
+}
+.main .login .tips-wrapper .cont-wrapper {
+  display: inline-block;
+  width: 90%;
+}
+.main .login .tips-wrapper .icon-tips {
+  display: inline-block;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background: url(../images/icon-tips.png);
+}
+.main .login .tips-wrapper p {
+  display: inline-block;
+  vertical-align: middle;
+  color: #999;
+  font-size: 12px;
+}
+.login .login-tab-l,
+.login .login-tab-r {
+  float: left;
+  width: 173px;
+}
+.login .login-tab {
+  height: 54px;
+  font-size: 18px;
+  font-family: "microsoft yahei";
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+  background: #fff;
+  display: block;
+}
+.login .login-tab a:hover {
+  font-weight: 700;
+}
+.login .login-tab-l {
+  position: relative;
+}
+.login .login-tab-l a {
+  width: 99%;
+  height: 18px;
+  left: 0px;
+  top: 18px;
+  position: absolute;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+.login .login-tab-r {
+  position: relative;
+  overflow: hidden;
+}
+.login .login-tab-r a {
+  width: 99%;
+  height: 18px;
+  left: 20px;
+  top: 18px;
+  position: absolute;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+.qrcode-login {
+  width: 306px;
+  padding: 20px 18px 20px 20px;
+  text-align: center;
+}
+.qrcode-main {
+  position: relative;
+  height: 168px;
+  margin-top: 40px;
+}
+.qrcode-img {
+  padding: 8px;
+  width: 155px;
+  position: absolute;
+  left: 64px;
+}
+.qrcode-img img {
+  width: 147px;
+  height: 147px;
+  vertical-align: middle;
+}
+.qrcode-panel {
+  width: 257px;
+  margin: 18px auto 14px;
+  margin-left: 18px;
+  text-align: center;
+}
+.qrcode-panel ul .fore1 a span {
+  color: #d2454c;
+}
+.qrcode-panel ul li {
+  display: inline-block;
+  padding: 0 0 0 5px;
+  margin: 0 5px 0 0;
+}
+.qr-coagent {
+  background-color: #fff;
+  font-family: "microsoft yahei";
+  color: #999;
+  border: none;
+  padding: 0;
+  line-height: 25px;
+  margin-left: 45px;
+  width: 100%;
+}
+.qr-coagent ul {
+  display: flex;
+  justify-content: center;
+}
+.qr-coagent ul li {
+  margin-right: 30px;
+  text-align: center;
+}
+.qr-coagent ul li span {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.qr-coagent ul li .free-input::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: url(../images/qr-coagent.png) no-repeat;
+  margin: 0 auto;
+  position: absolute;
+  left: 62px;
+}
+.qr-coagent ul li .faster::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: url(../images/qr-coagent.png) no-repeat -27px 0;
+  margin: 0 auto;
+  position: absolute;
+  left: 140px;
+}
+.qr-coagent ul li .more-safe::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: url(../images/qr-coagent.png) no-repeat -54px 0;
+  margin: 0 auto;
+  position: absolute;
+  left: 207px;
+}
+.log-qr-icon {
+  position: relative;
+  margin-top: 20px;
+  border-top: 1px solid #f4f4f4;
+}
+.log-qr-icon ul {
+  display: flex;
+}
+.log-qr-icon ul li {
+  height: 60px;
+  line-height: 60px;
+  margin-right: 32px;
+}
+.log-qr-icon ul li:first-child {
+  margin-left: 15px;
+}
+.log-qr-icon ul li:last-child {
+  margin-right: 0;
+  margin-left: 25px;
+}
+.log-qr-icon ul li:last-child a span {
+  position: absolute;
+  right: -50px;
+  color: #4592c3;
+  font-size: 13px;
+}
+.log-qr-icon ul li:last-child a span:hover {
+  color: #c81623;
+}
+.log-qr-icon .qq::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon_qq.png) no-repeat;
+}
+.log-qr-icon .wx::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 37px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon_wechat.png) no-repeat;
+}
+.log-qr-icon .zfb::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 93px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon_ipay.png) no-repeat;
+}
+.login-box {
+  margin: auto;
+  height: 230px;
+  width: 300px;
+  margin-top: 80px;
+}
+.login-box form {
+  margin-bottom: 20px;
+}
+.login-box form ul {
+  width: 100%;
+  height: 100%;
+}
+label[for=uname]::before {
+  content: '';
+  display: inline-block;
+  width: 38px;
+  height: 36px;
+  border-right: 1px solid #bdbdbd;
+  background: url(../images/pwd-icons-new.png) no-repeat;
+  background-color: #cfcdcd;
+}
+label[for=password]::before {
+  content: '';
+  display: inline-block;
+  width: 38px;
+  height: 36px;
+  border-right: 1px solid #bdbdbd;
+  background: url(../images/pwd-icons-new.png) no-repeat -48px 0;
+  background-color: #cfcdcd;
+}
+input[type=submit] {
+  width: 100%;
+  height: 34px;
+  background-color: #c81623;
+  font-size: 17px;
+  color: #fff;
+}
+input[type=checkbox] {
+  vertical-align: middle;
+}
+label[for=ochecked] {
+  color: #c6c6c6;
+}
+.login-box form ul li {
+  position: relative;
+  width: 300px;
+  height: 38px;
+  margin: 20px 0;
+}
+.one,
+.two {
+  border: 1px solid #bdbdbd;
+}
+.itxt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  font-size: 14px;
+}
+.login-box form ul .choose {
+  display: flex;
+  justify-content: space-between;
+}
+.login-qr-icon {
+  position: relative;
+  margin-top: 20px;
+  border-top: 1px solid #f4f4f4;
+}
+.login-qr-icon ul {
+  display: flex;
+}
+.login-qr-icon ul li {
+  height: 70px;
+  line-height: 70px;
+  margin-right: 32px;
+}
+.login-qr-icon ul li:first-child {
+  margin-left: 15px;
+}
+.login-qr-icon ul li:last-child {
+  margin-right: 0;
+  margin-left: 25px;
+}
+.login-qr-icon ul li:last-child a span {
+  position: absolute;
+  right: -10px;
+  color: #4592c3;
+  font-size: 13px;
+}
+.login-qr-icon ul li:last-child a span:hover {
+  color: #c81623;
+}
+.login-qr-icon .qq::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: -15px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon_qq.png) no-repeat;
+}
+.login-qr-icon .wx::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: 37px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon_wechat.png) no-repeat;
+}
+.login-qr-icon .zfb::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: 93px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon_ipay.png) no-repeat;
+}
+.two .show {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+.two .noShow {
+  background: url(../images/noshow.png) no-repeat;
+  display: none;
+}
+.two .okShow {
+  background: url(../images/okshow.png) no-repeat;
+  display: none;
+}
+
+.footer {
+  padding-top: 20px;
+  height: 125px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.footer .mod_copyright {
+  padding-top: 20px;
+  text-align: center;
+}
+.footer .mod_copyright .links a {
+  padding: 0 7px;
+  color: #8c8c8c;
+  border-right: 1px solid #666;
+}
+.footer .mod_copyright .links a:last-child {
+  border-right: 0;
+}
+.footer .mod_copyright .links a:hover {
+  color: #c81623;
+}
+.footer .mod_copyright .copyright {
+  padding-top: 20px;
+  height: 40px;
+  line-height: 20px;
+  text-align: center;
+}

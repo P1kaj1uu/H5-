@@ -1,0 +1,142 @@
+.header .sk img {
+  position: absolute;
+  border-left: 1px solid #c81523;
+  top: 35px;
+  left: 190px;
+  padding-left: 20px;
+}
+
+.nav .w .sk_list ul li {
+  float: left;
+}
+.nav .w .sk_list ul li a {
+  display: block;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 47px;
+  color: #000;
+  font-weight: 700;
+}
+.nav .w .sk_con {
+  float: right;
+}
+.nav .w .sk_con ul li {
+  float: left;
+}
+.nav .w .sk_con ul li a {
+  display: block;
+  padding: 0 10px;
+  line-height: 49px;
+  font-size: 14px;
+}
+.nav .w .sk_con ul li:last-child a::after {
+  content: '\e91e';
+  font-family: 'icomoon';
+  margin-left: 2px;
+}
+.nav {
+  overflow: hidden;
+}
+
+.sk_container {
+  width: 1200px;
+}
+.sk_container .sk_hd {
+  width: 100%;
+  height: 180px;
+}
+.sk_container .sk_hd img {
+  width: 100%;
+  height: 120px;
+}
+.sk_container .sk_bd ul {
+  /* 开启flex弹性布局 */
+  display: flex;
+  /* 设置主轴上子元素的排列方式 */
+  justify-content: space-between;
+  /* 换行显示 */
+  flex-wrap: wrap;
+}
+.sk_container .sk_bd ul li {
+  width: 290px;
+  height: 460px;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+.sk_container .sk_bd ul li:nth-child(-n + 16) {
+  margin-bottom: 20px;
+}
+.sk_container .sk_bd ul li:hover {
+  border: 1px solid #c81523;
+}
+.sk_container .sk_bd ul li img {
+  width: 100%;
+  height: 285px;
+}
+.sk_container .sk_bd ul li h3 {
+  margin: 3px;
+  height: 45px;
+  font-weight: 400;
+  color: #6e6e6e;
+  /* 第二行超出部分隐藏 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sk_container .sk_bd ul li .price {
+  margin: 10px 3px;
+}
+.sk_container .sk_bd ul li .now {
+  margin-right: 5px;
+  color: #eb0005;
+  font-size: 20px;
+  font-weight: 700;
+}
+.sk_container .sk_bd ul li .now em {
+  font-size: 13px;
+}
+.sk_container .sk_bd ul li .old {
+  color: #a3a3a3;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+.sk_container .sk_bd ul li .count {
+  margin: 10px 3px;
+  display: flex;
+  height: 20px;
+  line-height: 20px;
+}
+.sk_container .sk_bd ul li .count .pillar {
+  display: inline-block;
+  margin: auto;
+  width: 135px;
+  height: 10px;
+  line-height: 10px;
+  border: 1px solid #ec282c;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+.sk_container .sk_bd ul li .count .pillar .inIt {
+  margin-top: -0.5px;
+  height: 9px;
+  width: 87%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #ec282c;
+}
+.sk_container .sk_bd ul li .count p span {
+  color: #e03b42;
+}
+.sk_container .sk_bd ul li button {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #b11918;
+  color: #fffafb;
+  font-size: 18px;
+  font-weight: 300;
+}

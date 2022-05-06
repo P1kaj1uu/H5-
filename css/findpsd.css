@@ -1,0 +1,139 @@
+/* 版心 */
+.w {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.header {
+  height: 84px;
+  background-color: #fff;
+  border-bottom: 2px solid #c81523;
+}
+.header .logo {
+  position: relative;
+  padding-top: 18px;
+}
+.header .logo span {
+  display: block;
+  position: absolute;
+  left: 200px;
+  bottom: 15px;
+  width: 110px;
+  height: 40px;
+  font-size: 24px;
+  color: #333;
+}
+
+.find-main {
+  margin-top: 20px;
+  height: 470px;
+  border: 1px solid #ccc;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
+  min-height: 62px;
+  margin-bottom: 15px;
+}
+.item-input {
+  position: relative;
+  margin: 50px auto 30px;
+}
+.field {
+  position: relative;
+  float: left;
+  padding: 15px 0 15px 15px;
+  width: 398px;
+  height: 50px;
+  margin-left: -1px;
+  background: transparent;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+.field::placeholder {
+  color: #ccc;
+}
+.i-ops::after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%) scale(0.8);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url(../images/clear.png) no-repeat;
+}
+.form-item-validate {
+  margin: 50px auto;
+  min-width: 400px;
+  min-height: 62px;
+}
+.test {
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Microsoft YaHei;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: -.25px;
+}
+.icon-click {
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: middle;
+  width: 16px;
+  height: 18px;
+  overflow: hidden;
+  background: url(../images/click.png) no-repeat;
+}
+.form-item-next {
+  margin: 30px auto 50px;
+  min-width: 400px;
+  min-height: 62px;
+}
+.nextstep {
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #c81623;
+  border-color: #c81623;
+  opacity: .5;
+  color: #fff;
+  font-size: 14px;
+  cursor: not-allowed;
+}
+
+.footer {
+  padding-top: 30px;
+  height: 125px;
+  background-color: #f5f5f5;
+}
+.footer .mod_copyright {
+  padding-top: 20px;
+  text-align: center;
+}
+.footer .mod_copyright .links a {
+  padding: 0 7px;
+  color: #666;
+  border-right: 1px solid #666;
+}
+.footer .mod_copyright .links a:last-child {
+  border-right: 0;
+}
+.footer .mod_copyright .links a:hover {
+  color: #c81623;
+}
+.footer .mod_copyright .copyright {
+  padding-top: 20px;
+  height: 40px;
+  line-height: 20px;
+  text-align: center;
+}
