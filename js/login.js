@@ -44,3 +44,37 @@ noShow.addEventListener('click', function () {
     flag = true
   }
 })
+
+// 获取登录按钮
+let loginBtn = document.querySelector('.loginBtn')
+// 获取用户输入的用户名
+let username = document.querySelector('#uname')
+let password = document.querySelector('#password')
+// 获取用户输入的密码
+// 当点击登录按钮时
+loginBtn.addEventListener('click', function (e) {
+  // 阻止默认事件
+  e.preventDefault()
+  // 记录用户输入的用户名和密码
+  let obj = {
+    uname: username.value,
+    uPsd: password.value
+  }
+  if (username.value !== '' && password.value !== '') {
+    // 本地存储数据
+    localStorage.setItem('user', JSON.stringify(obj))
+    // 跳转到新的页面
+    location.href = '../index.html'
+  } else {
+    alert('请先输入用户名和密码！')
+  }
+})
+
+// 读取本地存储中的数据
+let obj = JSON.parse(localStorage.getItem('user'))
+// 如果有数据
+if (obj) {
+  // 将本地存储中的数据，自动填写到输入框中
+  username.value = obj.uname
+  password.value = obj.uPsd
+}

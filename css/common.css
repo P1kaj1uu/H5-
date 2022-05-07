@@ -18,6 +18,9 @@
 .fl {
     float: left;
 }
+.exit {
+  cursor: pointer;
+}
 .fr {
     float: right;
 }
