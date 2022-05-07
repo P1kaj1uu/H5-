@@ -1,10 +1,22 @@
+/* 媒体查询 */
+@media screen and (max-width: 1200px) {
+  .elevator_fix {
+    /* 隐藏右侧导航选择模块 */
+    visibility: hidden;
+  }
+}
+
 .main {
   margin-left: 220px;
   width: 980px;
   height: 465px;
+  display: flex;
+  position: absolute;
 }
 .main .focus {
-  float: left;
+  margin-right: 9px;
+  width: 725px;
+  height: 458px;
   margin-top: 5px;
 }
 .main .focus img {
@@ -254,8 +266,8 @@
   position: sticky;
   top: 0;
   float: right;
-  right: 90px;
-  margin-top: 270px;
+  right: 80px;
+  margin-top: 165px;
   border-radius: 40px 40px;
   overflow: hidden;
 }
