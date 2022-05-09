@@ -8,3 +8,11 @@ for (let i = 0; i < sk_cons.length; i++) {
     this.classList.add('style_red')
   })
 }
+
+let details = document.querySelectorAll('.details-item')
+for (let i = 0; i < details.length; i++) {
+  details[i].addEventListener('click', function () {
+    // 点击跳转商品详情页面
+    location.href = '../details.html'
+  })
+}

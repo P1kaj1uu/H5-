@@ -1,0 +1,132 @@
+.header .sk img {
+  position: absolute;
+  border-left: 1px solid #c81523;
+  top: 35px;
+  left: 190px;
+  padding-left: 20px;
+}
+
+.details {
+  margin-top: 20px;
+}
+.details .details_Img h5 {
+  font-weight: 400;
+}
+.details .details_Img h5 span {
+  font-weight: 600;
+}
+.details .details_Img h5 em {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+}
+.details .details_Img .prev-box {
+  position: relative;
+  margin-top: 15px;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #666;
+}
+.details .details_Img .prev-box i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background: url(../images/__sprite.png) 0px -24px;
+}
+.details .details_Img .prev-box .small {
+  width: 100%;
+  height: 100%;
+}
+.details .details_Img .prev-box .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
+  opacity: 0.5;
+  border: 1px solid #333;
+  display: none;
+  cursor: move;
+}
+.details .details_Img .prev-box .big {
+  display: none;
+  position: absolute;
+  left: 350px;
+  top: 0;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #666;
+  overflow: hidden;
+}
+.details .details_Img .prev-box .big>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.detailSlide {
+  position: relative;
+}
+.detailSlide .arrow-prev,
+.detailSlide .arrow-next {
+  display: block;
+  width: 22px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  margin-top: -16px;
+}
+.arrow-prev .sprite-arrow-prev {
+  display: block;
+  left: 0px;
+  width: 22px;
+  height: 32px;
+  background: url(../images/__sprite.png) 0px -54px;
+}
+.arrow-next .sprite-arrow-next {
+  display: block;
+  position: absolute;
+  left: 325px;
+  width: 22px;
+  height: 32px;
+  background: url(../images/__sprite.png) -78px 0px;
+}
+.sms_active {
+  border: 2px solid #01c30b;
+}
+.detailSlide {
+  position: relative;
+  width: 350px;
+  height: 150px;
+}
+.detailSlide ul {
+  padding-top: 50px;
+  padding-left: 20px;
+  width: 550px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+}
+.detailSlide ul li {
+  float: left;
+  margin: 0 10px;
+  max-width: 60px;
+  max-height: 70px;
+}
+.detailSlide ul li  {
+  border: 2px solid #fff;
+}
+.detailSlide ul li:nth-child(5),
+.detailSlide ul li:nth-child(6) {
+  display: none;
+}
